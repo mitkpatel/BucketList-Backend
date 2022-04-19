@@ -34,7 +34,7 @@ app.use('/api/popular',popularRoute);
 app.use(fileUpload());
 app.use(express.static('public'));
 
-const PORT = process.env.PORT | 8000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, ()=>{
     console.log('server started');
 }
